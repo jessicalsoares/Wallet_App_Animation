@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B542524A2AF4F8E4003C5ECB /* Wallet_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54252492AF4F8E4003C5ECB /* Wallet_AppApp.swift */; };
+		B542524C2AF4F8E4003C5ECB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B542524B2AF4F8E4003C5ECB /* ContentView.swift */; };
+		B542524E2AF4F8E5003C5ECB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B542524D2AF4F8E5003C5ECB /* Assets.xcassets */; };
+		B54252512AF4F8E5003C5ECB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B54252502AF4F8E5003C5ECB /* Preview Assets.xcassets */; };
+		B542525B2AF4F8E5003C5ECB /* Wallet_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B542525A2AF4F8E5003C5ECB /* Wallet_AppTests.swift */; };
+		B54252652AF4F8E5003C5ECB /* Wallet_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54252642AF4F8E5003C5ECB /* Wallet_AppUITests.swift */; };
+		B54252672AF4F8E5003C5ECB /* Wallet_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54252662AF4F8E5003C5ECB /* Wallet_AppUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B54252572AF4F8E5003C5ECB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B542523E2AF4F8E4003C5ECB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B54252452AF4F8E4003C5ECB;
+			remoteInfo = "Wallet App";
+		};
+		B54252612AF4F8E5003C5ECB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B542523E2AF4F8E4003C5ECB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B54252452AF4F8E4003C5ECB;
+			remoteInfo = "Wallet App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B54252462AF4F8E4003C5ECB /* Wallet App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wallet App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B54252492AF4F8E4003C5ECB /* Wallet_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wallet_AppApp.swift; sourceTree = "<group>"; };
+		B542524B2AF4F8E4003C5ECB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B542524D2AF4F8E5003C5ECB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B54252502AF4F8E5003C5ECB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B54252562AF4F8E5003C5ECB /* Wallet AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wallet AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B542525A2AF4F8E5003C5ECB /* Wallet_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wallet_AppTests.swift; sourceTree = "<group>"; };
+		B54252602AF4F8E5003C5ECB /* Wallet AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wallet AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B54252642AF4F8E5003C5ECB /* Wallet_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wallet_AppUITests.swift; sourceTree = "<group>"; };
+		B54252662AF4F8E5003C5ECB /* Wallet_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wallet_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B54252432AF4F8E4003C5ECB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B54252532AF4F8E5003C5ECB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B542525D2AF4F8E5003C5ECB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B542523D2AF4F8E4003C5ECB = {
+			isa = PBXGroup;
+			children = (
+				B54252482AF4F8E4003C5ECB /* Wallet App */,
+				B54252592AF4F8E5003C5ECB /* Wallet AppTests */,
+				B54252632AF4F8E5003C5ECB /* Wallet AppUITests */,
+				B54252472AF4F8E4003C5ECB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B54252472AF4F8E4003C5ECB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B54252462AF4F8E4003C5ECB /* Wallet App.app */,
+				B54252562AF4F8E5003C5ECB /* Wallet AppTests.xctest */,
+				B54252602AF4F8E5003C5ECB /* Wallet AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B54252482AF4F8E4003C5ECB /* Wallet App */ = {
+			isa = PBXGroup;
+			children = (
+				B54252492AF4F8E4003C5ECB /* Wallet_AppApp.swift */,
+				B542524B2AF4F8E4003C5ECB /* ContentView.swift */,
+				B542524D2AF4F8E5003C5ECB /* Assets.xcassets */,
+				B542524F2AF4F8E5003C5ECB /* Preview Content */,
+			);
+			path = "Wallet App";
+			sourceTree = "<group>";
+		};
+		B542524F2AF4F8E5003C5ECB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B54252502AF4F8E5003C5ECB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B54252592AF4F8E5003C5ECB /* Wallet AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				B542525A2AF4F8E5003C5ECB /* Wallet_AppTests.swift */,
+			);
+			path = "Wallet AppTests";
+			sourceTree = "<group>";
+		};
+		B54252632AF4F8E5003C5ECB /* Wallet AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B54252642AF4F8E5003C5ECB /* Wallet_AppUITests.swift */,
+				B54252662AF4F8E5003C5ECB /* Wallet_AppUITestsLaunchTests.swift */,
+			);
+			path = "Wallet AppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B54252452AF4F8E4003C5ECB /* Wallet App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B542526A2AF4F8E5003C5ECB /* Build configuration list for PBXNativeTarget "Wallet App" */;
+			buildPhases = (
+				B54252422AF4F8E4003C5ECB /* Sources */,
+				B54252432AF4F8E4003C5ECB /* Frameworks */,
+				B54252442AF4F8E4003C5ECB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Wallet App";
+			productName = "Wallet App";
+			productReference = B54252462AF4F8E4003C5ECB /* Wallet App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B54252552AF4F8E5003C5ECB /* Wallet AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B542526D2AF4F8E5003C5ECB /* Build configuration list for PBXNativeTarget "Wallet AppTests" */;
+			buildPhases = (
+				B54252522AF4F8E5003C5ECB /* Sources */,
+				B54252532AF4F8E5003C5ECB /* Frameworks */,
+				B54252542AF4F8E5003C5ECB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B54252582AF4F8E5003C5ECB /* PBXTargetDependency */,
+			);
+			name = "Wallet AppTests";
+			productName = "Wallet AppTests";
+			productReference = B54252562AF4F8E5003C5ECB /* Wallet AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B542525F2AF4F8E5003C5ECB /* Wallet AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B54252702AF4F8E5003C5ECB /* Build configuration list for PBXNativeTarget "Wallet AppUITests" */;
+			buildPhases = (
+				B542525C2AF4F8E5003C5ECB /* Sources */,
+				B542525D2AF4F8E5003C5ECB /* Frameworks */,
+				B542525E2AF4F8E5003C5ECB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B54252622AF4F8E5003C5ECB /* PBXTargetDependency */,
+			);
+			name = "Wallet AppUITests";
+			productName = "Wallet AppUITests";
+			productReference = B54252602AF4F8E5003C5ECB /* Wallet AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B542523E2AF4F8E4003C5ECB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					B54252452AF4F8E4003C5ECB = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					B54252552AF4F8E5003C5ECB = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = B54252452AF4F8E4003C5ECB;
+					};
+					B542525F2AF4F8E5003C5ECB = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = B54252452AF4F8E4003C5ECB;
+					};
+				};
+			};
+			buildConfigurationList = B54252412AF4F8E4003C5ECB /* Build configuration list for PBXProject "Wallet App" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B542523D2AF4F8E4003C5ECB;
+			productRefGroup = B54252472AF4F8E4003C5ECB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B54252452AF4F8E4003C5ECB /* Wallet App */,
+				B54252552AF4F8E5003C5ECB /* Wallet AppTests */,
+				B542525F2AF4F8E5003C5ECB /* Wallet AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B54252442AF4F8E4003C5ECB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B54252512AF4F8E5003C5ECB /* Preview Assets.xcassets in Resources */,
+				B542524E2AF4F8E5003C5ECB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B54252542AF4F8E5003C5ECB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B542525E2AF4F8E5003C5ECB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B54252422AF4F8E4003C5ECB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B542524C2AF4F8E4003C5ECB /* ContentView.swift in Sources */,
+				B542524A2AF4F8E4003C5ECB /* Wallet_AppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B54252522AF4F8E5003C5ECB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B542525B2AF4F8E5003C5ECB /* Wallet_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B542525C2AF4F8E5003C5ECB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B54252652AF4F8E5003C5ECB /* Wallet_AppUITests.swift in Sources */,
+				B54252672AF4F8E5003C5ECB /* Wallet_AppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B54252582AF4F8E5003C5ECB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B54252452AF4F8E4003C5ECB /* Wallet App */;
+			targetProxy = B54252572AF4F8E5003C5ECB /* PBXContainerItemProxy */;
+		};
+		B54252622AF4F8E5003C5ECB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B54252452AF4F8E4003C5ECB /* Wallet App */;
+			targetProxy = B54252612AF4F8E5003C5ECB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B54252682AF4F8E5003C5ECB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B54252692AF4F8E5003C5ECB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B542526B2AF4F8E5003C5ECB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Wallet App/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "udacity.Wallet-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B542526C2AF4F8E5003C5ECB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Wallet App/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "udacity.Wallet-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B542526E2AF4F8E5003C5ECB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "udacity.Wallet-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wallet App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Wallet App";
+			};
+			name = Debug;
+		};
+		B542526F2AF4F8E5003C5ECB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "udacity.Wallet-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wallet App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Wallet App";
+			};
+			name = Release;
+		};
+		B54252712AF4F8E5003C5ECB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "udacity.Wallet-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Wallet App";
+			};
+			name = Debug;
+		};
+		B54252722AF4F8E5003C5ECB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "udacity.Wallet-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Wallet App";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B54252412AF4F8E4003C5ECB /* Build configuration list for PBXProject "Wallet App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B54252682AF4F8E5003C5ECB /* Debug */,
+				B54252692AF4F8E5003C5ECB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B542526A2AF4F8E5003C5ECB /* Build configuration list for PBXNativeTarget "Wallet App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B542526B2AF4F8E5003C5ECB /* Debug */,
+				B542526C2AF4F8E5003C5ECB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B542526D2AF4F8E5003C5ECB /* Build configuration list for PBXNativeTarget "Wallet AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B542526E2AF4F8E5003C5ECB /* Debug */,
+				B542526F2AF4F8E5003C5ECB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B54252702AF4F8E5003C5ECB /* Build configuration list for PBXNativeTarget "Wallet AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B54252712AF4F8E5003C5ECB /* Debug */,
+				B54252722AF4F8E5003C5ECB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B542523E2AF4F8E4003C5ECB /* Project object */;
+}
