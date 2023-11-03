@@ -19,6 +19,7 @@
 		B542527E2AF50F15003C5ECB /* OverviewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B542527D2AF50F15003C5ECB /* OverviewModel.swift */; };
 		B54252802AF51386003C5ECB /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = B542527F2AF51386003C5ECB /* Home.swift */; };
 		B54252822AF516F5003C5ECB /* CustomCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54252812AF516F5003C5ECB /* CustomCorner.swift */; };
+		B54252842AF53B6A003C5ECB /* CardRectKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54252832AF53B6A003C5ECB /* CardRectKey.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		B542527D2AF50F15003C5ECB /* OverviewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewModel.swift; sourceTree = "<group>"; };
 		B542527F2AF51386003C5ECB /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		B54252812AF516F5003C5ECB /* CustomCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCorner.swift; sourceTree = "<group>"; };
+		B54252832AF53B6A003C5ECB /* CardRectKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardRectKey.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 				B54252792AF50BE2003C5ECB /* Card.swift */,
 				B542527B2AF50D59003C5ECB /* Expense.swift */,
 				B542527D2AF50F15003C5ECB /* OverviewModel.swift */,
+				B54252832AF53B6A003C5ECB /* CardRectKey.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 				B542524C2AF4F8E4003C5ECB /* ContentView.swift in Sources */,
 				B542527A2AF50BE2003C5ECB /* Card.swift in Sources */,
 				B54252822AF516F5003C5ECB /* CustomCorner.swift in Sources */,
+				B54252842AF53B6A003C5ECB /* CardRectKey.swift in Sources */,
 				B54252802AF51386003C5ECB /* Home.swift in Sources */,
 				B542524A2AF4F8E4003C5ECB /* Wallet_AppApp.swift in Sources */,
 			);
