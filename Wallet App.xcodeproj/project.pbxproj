@@ -14,6 +14,11 @@
 		B542525B2AF4F8E5003C5ECB /* Wallet_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B542525A2AF4F8E5003C5ECB /* Wallet_AppTests.swift */; };
 		B54252652AF4F8E5003C5ECB /* Wallet_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54252642AF4F8E5003C5ECB /* Wallet_AppUITests.swift */; };
 		B54252672AF4F8E5003C5ECB /* Wallet_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54252662AF4F8E5003C5ECB /* Wallet_AppUITestsLaunchTests.swift */; };
+		B542527A2AF50BE2003C5ECB /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54252792AF50BE2003C5ECB /* Card.swift */; };
+		B542527C2AF50D59003C5ECB /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = B542527B2AF50D59003C5ECB /* Expense.swift */; };
+		B542527E2AF50F15003C5ECB /* OverviewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B542527D2AF50F15003C5ECB /* OverviewModel.swift */; };
+		B54252802AF51386003C5ECB /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = B542527F2AF51386003C5ECB /* Home.swift */; };
+		B54252822AF516F5003C5ECB /* CustomCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54252812AF516F5003C5ECB /* CustomCorner.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,11 @@
 		B54252602AF4F8E5003C5ECB /* Wallet AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wallet AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B54252642AF4F8E5003C5ECB /* Wallet_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wallet_AppUITests.swift; sourceTree = "<group>"; };
 		B54252662AF4F8E5003C5ECB /* Wallet_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wallet_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B54252792AF50BE2003C5ECB /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		B542527B2AF50D59003C5ECB /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
+		B542527D2AF50F15003C5ECB /* OverviewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewModel.swift; sourceTree = "<group>"; };
+		B542527F2AF51386003C5ECB /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		B54252812AF516F5003C5ECB /* CustomCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCorner.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +104,8 @@
 		B54252482AF4F8E4003C5ECB /* Wallet App */ = {
 			isa = PBXGroup;
 			children = (
+				B54252742AF4F9EB003C5ECB /* Model */,
+				B54252732AF4F9E4003C5ECB /* View */,
 				B54252492AF4F8E4003C5ECB /* Wallet_AppApp.swift */,
 				B542524B2AF4F8E4003C5ECB /* ContentView.swift */,
 				B542524D2AF4F8E5003C5ECB /* Assets.xcassets */,
@@ -125,6 +137,25 @@
 				B54252662AF4F8E5003C5ECB /* Wallet_AppUITestsLaunchTests.swift */,
 			);
 			path = "Wallet AppUITests";
+			sourceTree = "<group>";
+		};
+		B54252732AF4F9E4003C5ECB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B542527F2AF51386003C5ECB /* Home.swift */,
+				B54252812AF516F5003C5ECB /* CustomCorner.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B54252742AF4F9EB003C5ECB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B54252792AF50BE2003C5ECB /* Card.swift */,
+				B542527B2AF50D59003C5ECB /* Expense.swift */,
+				B542527D2AF50F15003C5ECB /* OverviewModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +288,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B542527C2AF50D59003C5ECB /* Expense.swift in Sources */,
+				B542527E2AF50F15003C5ECB /* OverviewModel.swift in Sources */,
 				B542524C2AF4F8E4003C5ECB /* ContentView.swift in Sources */,
+				B542527A2AF50BE2003C5ECB /* Card.swift in Sources */,
+				B54252822AF516F5003C5ECB /* CustomCorner.swift in Sources */,
+				B54252802AF51386003C5ECB /* Home.swift in Sources */,
 				B542524A2AF4F8E4003C5ECB /* Wallet_AppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
