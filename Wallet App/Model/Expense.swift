@@ -19,7 +19,7 @@ struct Expense: Identifiable{
 var expenses: [Expense] = [
     Expense(amountSpent: "$128", product: "Amazon", productIcon: "Amazon", spendType: "Groceries"),
     Expense(amountSpent: "$18", product: "Youtube", productIcon: "Youtube", spendType: "Streaming"),
-    Expense(amountSpent: "$10", product: "Dribble", productIcon: "Dribble", spendType: "Membership"),
+    Expense(amountSpent: "$10", product: "Dribble", productIcon: "Dribbble", spendType: "Membership"),
     Expense(amountSpent: "$28", product: "Apple", productIcon: "Apple", spendType: "Apple Pay"),
     Expense(amountSpent: "$9", product: "Patreon", productIcon: "Patreon", spendType: "Membership"),
     Expense(amountSpent: "$100", product: "Instagram", productIcon: "Instagram", spendType: "Ad Publish"),

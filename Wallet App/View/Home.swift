@@ -15,11 +15,15 @@ struct Home: View {
     @State private var expandCards: Bool = false
     
     //Detail Card Properties
+    @State private var showDetailView: Bool = false
+    @State private var showDetailContent: Bool = false
+    @State private var selectedCard: Card?
+    @Namespace private var animation
     var body: some View {
         VStack(spacing: 0) {
             HStack{
                 Button{
-                    
+                
                 } label: {
                     Image(systemName: "line.3.horizontal")
                         .font(.title2)
@@ -92,6 +96,14 @@ struct Home: View {
                 })
                 .opacity(expandCards ? 1 : 0)
         })
+        .overlay(content: {
+            if let selectedCard, showDetailView{
+                DetailView(selectedCard)
+                    .transition(.asymmetric(insertion: .identity, removal: .offset(y: 5)))
+                
+                
+            }
+        })
         .overlayPreferenceValue(CardRectKey.self) { preferences in
             if let cardPreference = preferences["CardRect"] {
                 //Geometry reader is used to extract cgreact from the anchor
@@ -102,13 +114,102 @@ struct Home: View {
                         .frame(width: cardRect.width, height: expandCards ? nil : cardRect.height)
                     //Position it using offset
                         .offset(x: cardRect.minX, y:cardRect.minY)
-                        .onTapGesture {
-                            withAnimation(.easeInOut(duration: 0.35)){
-                                expandCards = true
-                            }
-                        }
                 }
+                .allowsHitTesting(!showDetailView)
             }
+        }
+    }
+    
+    //Detail view
+    @ViewBuilder
+    func DetailView(_ card: Card) -> some View{
+        VStack(spacing: 0){
+            //NavBar
+            HStack{
+                Button{
+                    withAnimation(.easeInOut(duration: 0.3)){
+                        showDetailContent = false
+                    }
+                    
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.1){
+                        withAnimation(.easeInOut(duration: 0.3)){
+                            showDetailView = false
+                        }
+                    }
+                    
+                } label: {
+                    Image(systemName: "chevron.left")
+                        .font(.title3.bold())
+                }
+                Spacer()
+                
+                Text("Transactions")
+                    .font(.title2.bold())
+                
+            }
+            .foregroundColor(.black)
+            .padding(15)
+            .opacity(showDetailContent ? 1 : 0)
+            
+            //Card view
+            CardView(card)
+                .rotation3DEffect(.init(degrees: showDetailContent ? 0 : -15),
+                                  axis: (x: 1, y: 0, z: 0), anchor: .top)
+                .matchedGeometryEffect(id: card.id, in: animation)
+                .frame(height: 200)
+                .padding([.horizontal, .top], 15)
+            
+            //pushing view to the top
+                .zIndex(1000)
+            
+            //Sample Expenses View
+            ScrollView(.vertical, showsIndicators: false){
+                VStack(spacing: 15){
+                    ForEach(expenses) { expense in
+                        HStack(spacing: 12) {
+                            Image(expense.productIcon)
+                                .resizable()
+                                .aspectRatio(contentMode: /*@START_MENU_TOKEN@*/.fill/*@END_MENU_TOKEN@*/)
+                                .frame(width: 50, height: 50)
+                                .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
+                            
+                            VStack(alignment: .leading, spacing: 4) {
+                                Text(expense.product)
+                                    .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                                
+                                Text(expense.spendType)
+                                    .font(.caption)
+                                    .foregroundColor(.gray)
+                            }
+                            Spacer()
+                            
+                            Text(expense.amountSpent)
+                                .fontWeight(.semibold)
+                        }
+                        
+                        Divider()
+                    }
+                }
+                .padding(.top, 25)
+                .padding([.horizontal, .bottom], 15)
+            }
+            .background{
+                CustomCorner(corners: [.topLeft, .topRight], radius: 30)
+                    .fill(.white)
+                    .padding(.top, -120)
+                    .ignoresSafeArea()
+            }
+            
+            //sliding effect
+            .offset(y: !showDetailContent ? (size.height * 0.7) : 0)
+            .opacity(showDetailContent ? 1 : 0)
+        }
+        .frame(maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .top)
+        .background{
+            Rectangle()
+                .fill(Color("DetailBG"))
+                .ignoresSafeArea()
+                .opacity(showDetailContent ? 1 : 0)
         }
     }
     
@@ -126,17 +227,50 @@ struct Home: View {
                     //Displaying first three cards on the stack
                     let displayingStackIndex = min(index, 2)
                     let displayScale = (displayingStackIndex / CGFloat(cards.count)) * 0.15
-                    CardView(card)
-                    //Aplying 3d rotation
-                        .rotation3DEffect(.init(degrees: expandCards ? -15 : 0),
-                                          axis: (x: 1, y: 0, z: 0), anchor: .top)
-                        .frame(height: 200)
+                    
+                    ZStack{
+                        if selectedCard?.id == card.id && showDetailView{
+                            //Empty view
+                            Rectangle()
+                                .foregroundColor(.clear)
+                        }else{
+                            CardView(card)
+                            //Aplying 3d rotation
+                                .rotation3DEffect(.init(degrees: expandCards ? (showDetailView ? 0 : -15) : 0),
+                                                  axis: (x: 1, y: 0, z: 0), anchor: .top)
+                            //Hero Effect ID
+                                .matchedGeometryEffect(id: card.id, in: animation)
+                            //Hiding cards once when the detail card displayed
+                                .offset(y: showDetailView ? (size.height * 0.9) : 0)
+                                .onTapGesture {
+                                    if expandCards {
+                                        //Expanding selected card
+                                        selectedCard = card
+                                        withAnimation(.easeInOut(duration: 0.3)){
+                                            showDetailView = true
+                                        }
+                                        
+                                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.15){
+                                            withAnimation(.easeInOut(duration: 0.3)){
+                                                showDetailContent = true
+                                            }
+                                        }
+                                    }else{
+                                        //Expanding cards
+                                        withAnimation(.easeInOut(duration: 0.35)){
+                                            expandCards = true
+                                        }
+                                    }
+                                }
+                        }
+                    }
+                    .frame(height: 200)
                     //Applying scaling
-                        .scaleEffect(1 - (expandCards ? 0 : displayScale))
-                        .offset(y: expandCards ? 0 : (displayingStackIndex * -15))
+                    .scaleEffect(1 - (expandCards ? 0 : displayScale))
+                    .offset(y: expandCards ? 0 : (displayingStackIndex * -15))
                     //Stacking one an Another
-                        .offset(y: reversedIndex * -200)
-                        .padding(.top, expandCards ? (reversedIndex == 0 ? 0 : 80) : 0)
+                    .offset(y: reversedIndex * -200)
+                    .padding(.top, expandCards ? (reversedIndex == 0 ? 0 : 80) : 0)
                 }
             }
             //Appling remaining height as padding
